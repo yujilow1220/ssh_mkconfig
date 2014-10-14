@@ -30,7 +30,11 @@ hostname = user_hostname[1]
 
 puts""
 
-puts "Host "+ args[:n]
+if args[:n] != nil
+	puts "Host "+ args[:n]
+else
+	puts "Host "+ hostname
+end
 puts "  Hostname "+hostname
 puts "  User " + user
 
